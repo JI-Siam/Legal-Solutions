@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+    .font-garamond {
+      font-family: 'EB Garamond', serif;
+    }
+    .font-poppins{
+        font-family: 'Poppins' , 'Times New Roman', Times, serif;
+    }
+
+    .right-arrow{
+        display: flex;
+        background-color: rgba(182, 140, 90, 1);
+        width: 40px;
+        height: 40px;
+        padding: 3.75px; 
+        color: white;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-border{
+        border:none;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+        border-right: 1px solid rgba(231, 231, 231, 1);
+    }
+
+    .middle-card-border{
+        border: none;
+        border: 1px solid rgba(231, 231, 231, 1);
+        border-left: none;
+    }
+
+</style>
+</head>
+
+<body class="font-[Poppins]">
+
+    <header>
+
+         <div class="navbar flex xl:justify-between items-center flex-wrap gap-5 px-10 py-10 lg:px-20 justify-around" >
+        <img src="./images/logo2.png" alt="nav-logo">
+        <ul class="flex gap-[30px] justify-center flex-wrap text-[rgba(112,112,112,1)]">
+            <li>Home</li>
+            <li>Services </li>
+            <li>Cases</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+        <button class="px-6 py-3 bg-[rgba(182,140,90,1)] rounded-lg text-white">Free Consultation</button>
+    </div>
+    
+
+    </header>
+
+
+    <section class="banner">
+
+        <div class="bg-[url('./images/banner.png')] bg-cover bg-no-repeat xl:mx-20 mx-10 rounded-2xl flex justify-center items-center flex-col  py-30 gap-10 ">
+         
+                <h2 class="px-10 lg:pl-50 lg:pr-60 xl:pl-60 xl:pr-70 text-white font-garamond font-bold text-7xl text-center">We Provide Effective Legal Solutions</h2>
+                <h3 class= "px-10 lg:pl-50 lg:pr-60  xl:pl-70 xl:pr-70 font-poppins text-white text-center">There are many variations of passages of Lorem Ipsum available, but the majority 
+                    have suffered alteration in some form, by injected humour.</h3>
+                
+                <div class="flex flex-wrap justify-center gap-3 w-full xl:px-80 px-10">
+                    <input class="bg-white px-2 py-3 rounded-xl mx-3  max-w-[500px] flex-1" type="search" placeholder="Search your services">
+                   <button class="px-6 py-3 bg-[rgba(182,140,90,1)] rounded-xl text-white">Search</button>
+                </div>
+
+        </div>
+
+    </section>
+
+    <section class="legal-practise xl:mx-20 mx-10 my-30">
+        <div>
+
+        <h2 class="font-garamond font-extrabold text-center text-[40px]">The Legal Practise</h2>
+        <h3 class="font-poppins text-[rgba(112,112,112,1)] text-center xl:px-60 px-10 py-5 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h3>
+
+        </div>
+
+       <div class="container grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mx-auto">
+
+        <div class="card card-border flex justify-center items-center flex-col px-10 py-20 gap-10">
+            <img src="./images/business.png" alt="">
+            <h4 class="text-[32px] font-extrabold font-garamond text-center">Business Law</h4>
+            <h5  class="text-[rgba(112,112,112,1)] text-center ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h5>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+        </div>
+
+         <div class="card  middle-card-border bg-[linear-gradient(180deg,rgba(243,243,243,1)_0%,rgba(243,243,243,0)_100%)] flex justify-center items-center flex-col px-10 py-20 gap-10">
+
+            <img src="./images/criminal.png" alt="criminal-law-image">
+            <h4 class="text-[32px] font-extrabold font-garamond text-center">Criminal Law</h4>
+            <h5  class="text-[rgba(112,112,112,1)] text-center ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h5>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+
+        </div>
+
+         <div class="card card-border flex justify-center items-center flex-col px-10 py-20 gap-10">
+
+            <img src="./images/child.png" alt="child=law-image">
+            <h4 class="text-[32px] font-extrabold font-garamond text-center">Child Support</h4>
+            <h5  class="text-[rgba(112,112,112,1)] text-center ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h5>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+
+        </div>
+
+         <div class="card border-r border-[rgba(231,231,231,1)]  flex justify-center items-center flex-col px-10 py-20 gap-10">
+
+            <img src="./images/education.png" alt="Education-Law-Image">
+            <h4 class="text-[32px] font-extrabold font-garamond text-center">Education Law</h4>
+            <h5  class="text-[rgba(112,112,112,1)] text-center ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h5>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+
+        </div>
+
+         <div class="card border-r border-[rgba(231,231,231,1)] flex justify-center items-center flex-col px-10 py-20 gap-10">
+
+            <img src="./images/divorce.png" alt="divorce-law-image">
+            <h4 class="text-[32px] font-extrabold font-garamond text-center">Divorce Law</h4>
+            <h5  class="text-[rgba(112,112,112,1)] text-center ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h5>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+
+        </div>
+
+         <div class="card flex justify-center items-center flex-col px-10 py-20 gap-10">
+
+            <img src="./images/tax.png" alt="tax-law-image">
+            <h4 class="text-[32px] font-extrabold font-garamond text-center">Tax Law</h4>
+            <h5  class="text-[rgba(112,112,112,1)] text-center ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h5>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+
+        </div>
+
+
+       </div>
+       
+
+    </section>
+
+    
+
+   
+</body>
+</html>
